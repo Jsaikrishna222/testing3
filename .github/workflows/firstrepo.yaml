@@ -1,0 +1,13 @@
+name: testingrepo
+
+on: push
+
+jobs:
+  first_job: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: welcome message
+      run: echo "My first gihub action job"
+    - name: list files
+      run: ls
+  
