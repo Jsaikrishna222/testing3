@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     -  name: checkout repo
-       run: actions/checkout@v4
+       uses: actions/checkout@v4
     -  name: install cowsay
        run: sudo apt-get install cowsay -y 
     -  name: execute cowsay command
@@ -18,4 +18,3 @@ jobs:
        run: cat dragon.txt
     -  name: list files 
        run: ls
-       
